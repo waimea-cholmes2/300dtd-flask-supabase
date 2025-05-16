@@ -1,0 +1,37 @@
+{%  extends "pages/base.jinja" %}
+
+{% block title %} Flask Demo {% endblock%}
+
+{% block content %} 
+    <section id ="hero">
+        <h1>Hello!!!</h1> 
+    </section>
+
+    <section id="things">
+    
+    {% for thing in things %}
+
+        
+        <article>
+        
+            <header>
+                {{ thing["name"] }}
+            </header>
+        
+            cost ${{ thing["cost"] }} <br>
+
+            Descrtiption: {{ thing["description"] }} <br>
+
+            Epicness: {{ thing["epicness level"] }}
+        
+            <footer>
+                Delete
+            </footer>
+        
+        
+        </article>
+    {% endfor %}
+
+    </section>
+
+{% endblock %}

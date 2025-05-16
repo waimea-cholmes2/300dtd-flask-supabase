@@ -1,0 +1,15 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pico-primary-background);
+    min-height: 10rem;
+}
+
+#hero h1 {
+    font-family: cursive;
+}
+
+#things {
+    display: flex;
+}
