@@ -12,4 +12,17 @@
 
 #things {
     display: flex;
+    gap: 5rem,;
+    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+#things footer a {
+    color: white;
+}
+
+#things footer a::hover {
+    color: green;
 }
