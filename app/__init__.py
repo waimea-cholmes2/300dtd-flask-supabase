@@ -31,6 +31,12 @@ def showThing(id):
 
     return render_template("pages/thing.jinja", thing = record)
 
+@app.get("/delete/<int:id>")
+def deleteThing(id):
+    # TODO!!!
+
+    return
+
 
 
 @app.errorhandler(404)
